@@ -10,6 +10,6 @@ def bigyoview (request):
     for kerdes in kerdesek:
         print(kerdes)
 
-    template = "bigyotemplate.html"
+    template = "index.html"
     context = {'a' : randint(0, 10), 'kerdesek2': kerdesek}
     return render(request, template, context)
