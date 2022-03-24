@@ -43,5 +43,26 @@
 </head>
 <body>
     <h1>Helló</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="kedvencszo" id="">
+        <input type="password" name="jelszo" id="">
+        <input type="number" name="szam" id="">
+        <textarea name="" id="" cols="30" rows="10">Ez egy hosszu szoveg</textarea>
+        <select name="valasztas" id="">
+            <option value="elso1">elso valasztas 1</option>
+            <option value="elso2">elso valasztas 2</option>
+            <option value="elso3">elso valasztas 3</option>
+        </select>
+        <input type="checkbox" name="checkbox" id="">
+        <button type="submit">Küld</button>
+    </form>
+
+    <ul>
+        {% for kerdes in kerdesek in  %}
+            
+        {% endfor %}
+    </ul>
+
 </body>
 </html>
